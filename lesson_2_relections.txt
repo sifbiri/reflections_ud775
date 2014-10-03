@@ -1,0 +1,7 @@
+What happens when you initialize a repository? Why do you need to do it?
+    Git will creat a directory .git (a hidden one) to store all the metadata related
+    to our files (repository) . We do it so we can get git to take monitor
+    our files in this repository. When we init git all the files inside the
+    directory that becomes a repository are initially untracked and somehow git
+    invite us to run the command "git add" on them. Also git status is a helpful
+    command. 
