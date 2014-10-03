@@ -1,0 +1,83 @@
+
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    By looking at the lines I have made change too. And only put our attention on
+    the things we removed or added. And try to find the miskate.
+
+    As write code and after we test it, we always want to add other features or make
+    some changes into our program. By doing this we will modify the our source file
+    permanently and older changes will go away. Most of the times we when we makes
+    changes we don't get them right the first time. And sometimes it gets even worse
+    and screw things over. So it helps to actually to revert our file back to a better
+    previous state. So every time we are about to make big changes, we create a new
+    file for those changes. By that we keep our old file and then use it for
+    comparison (diff tool) to see what changes we've brought that caused the
+    problem. Instead of trying to figure this manually and bring to ourselves a
+    headache for something that we can use the computer to help us with. We are
+    computer scientist for god sake. We solve our problems with computers. And those
+    problems are because of computers. Yeah so it's better that removing every
+    change we brought because we don't know which change that caused the problem. We
+    wouldn't have something to look back at and see what we did. We are forgetful
+    people.
+
+
+How could having easy access to the entire history of a file make you a better
+programmer in the long term?
+
+    I can see how i work. What changes I bring during a typical session of
+    improving my code. And makes more adventurous in playing with new features and
+    experimenting. You don't have to worry, if somethings breaks it's always easy
+    to fix it cause we have the history of our file.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    By committing you take control of when you want to create a point in the
+    history of file. Although there is always the risk of forgetting and that's
+    when its done automatically comes as a winner.
+
+    When making change to code. It is usualy has a purpose like to introduce
+    a new feature, fix a bug, fix a typos, and all those are best if he have to
+    it whenever we feel like it. By that our commits will have a logical meaning
+    and also we can have an idea just from reading those commit messages what
+    have brought on. While if it's done automatically one those saves will have
+    no meaning and it will most likely be broken code
+    (saved in the middle of a change)
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Usualy files are related to each other. Because when you create a code for
+    a project you want to devise into multiple files each has a purpose or a
+    function (module). And usualy one change to a file result in an other related
+    change in other file. So the same change is split into multiple files logically.
+    But when you write a document (Google Docs) all the content resides in one
+    files and even if there was other files, most of the time those files are not
+    related to each other.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    use git log to bring the whole commits already done sort of eyebird view on
+    your repository changes. Than select two of those commits by taking note of
+    their ids and use diff to get zoomin and get the details on what lines have
+    been added or removed.
+How might using version control make you more confident to make changes that
+could break something?
+
+    By knowing that you always have a working version to fall back to. You get
+    relaxed and stop worrying about breaking stuff because if you break something
+    it's always easy to checkout an other working commit and try to figure what
+    line changes casuse the damn bug that caused you headaches. Or should I say
+    was about to.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    From now on. For every writing or coding that requires time and a many
+    iterration to get it to an acceptable state. For writing i will probably
+    use it when writing long essays or math assignements using latex or just
+    plain or markup text. And for coding whenver I would write a program that's
+    big and have a lot of lines of code. So that I can always see how my changes
+    are and be able to reflect. You think I would forget that. I think that's the
+    big take-away from those lessons. 
