@@ -15,4 +15,16 @@ to, and those changes are related to each other logically so they make sense
 as a commit. Always from time to time try the git status command and also
 git diff to compare between what on the staging area what have been modifed on
 the directory, and also git diff staged to compare the differnces between
-the staging area and the and the last commit (latest snapshot of the repository)
+the staging area and the and the last commit (latest snapshot of the repository).
+If anything goes awry just use git reset -hard
+
+#### What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Since branches are essentily a special type of commit. Where instead of relying
+on it's id it has nice readable name tag, and also whenver makes a change (commit)
+it gets updated to reflect the last change (no need to keep track of ids). And
+also get checkedout automatically, pretty cool heh. It's comes handy when
+you want to play with your code (not too serious about it) and you wana keep
+you official, the one you always show to people, intact. So its helpfull for
+experimental features and sort of spin offs. But for the other usual stuff, like
+bug fixing, adding important features, all this goes to the master *"branch"*.
