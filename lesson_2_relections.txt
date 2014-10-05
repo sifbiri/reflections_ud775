@@ -1,7 +1,18 @@
-What happens when you initialize a repository? Why do you need to do it?
-    Git will creat a directory .git (a hidden one) to store all the metadata related
-    to our files (repository) . We do it so we can get git to take monitor
-    our files in this repository. When we init git all the files inside the
-    directory that becomes a repository are initially untracked and somehow git
-    invite us to run the command "git add" on them. Also git status is a helpful
-    command. 
+### What happens when you initialize a repository? Why do you need to do it?
+
+Git will creat a directory .git (M) to store all the metadata related
+to our files (repository) . We do it so we can get git to take monitor
+our files in this repository. When we init git all the files inside the
+directory that becomes a repository are initially untracked and somehow git
+invite us to run the command "git add" on them. Also git status is a helpful
+command.
+
+
+### How can you use the staging area to make sure you have one commit per logical change?
+
+By using the stagin are, you make sure to put ony the files that are made change
+to, and those changes are related to each other logically so they make sense
+as a commit. Always from time to time try the git status command and also
+git diff to compare between what on the staging area what have been modifed on
+the directory, and also git diff staged to compare the differnces between
+the staging area and the and the last commit (latest snapshot of the repository)
