@@ -18,7 +18,7 @@ the directory, and also git diff staged to compare the differnces between
 the staging area and the and the last commit (latest snapshot of the repository).
 If anything goes awry just use git reset -hard
 
-#### What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+### What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
 Since branches are essentily a special type of commit. Where instead of relying
 on it's id it has nice readable name tag, and also whenver makes a change (commit)
@@ -28,3 +28,38 @@ you want to play with your code (not too serious about it) and you wana keep
 you official, the one you always show to people, intact. So its helpfull for
 experimental features and sort of spin offs. But for the other usual stuff, like
 bug fixing, adding important features, all this goes to the master *"branch"*.
+
+### How do the diagrams help you visualize the branch structure?
+
+By using the diagram we can have an idea when that branch actualy start to
+diviate from the master one (the first commit they have in common).
+By doing this we also get an idea of the branch head parents and by that we
+trace those praents back till the very first commit. And so we know which commits
+are reachable by which one. So whevever we want to add a feature or fix a bug
+we visit a commit in our history and from there branch it out.
+
+### What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+When we merge two branches there are there important commits we use, each latest
+commit for each branch (HEAD) and the commit they share together we we trace
+both of those commits parents. So git will compare the two files add whatever
+new lines and if one line was removed from the original file in one commit
+but still in the other one, it will not be included the merge. We only add what
+have'nt been removed. When we merge two branches we still hold the history of
+both of them in the new commit and it's up to us to which branch to merge into
+which one, like from (whatever exp we did into master). When we see the diagram
+the new branch commit will have 2 parents and both of those will lead us eventually
+to only one, the one before we branched.
+
+### What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+When it's clear like in the obvious cases where very one aded somehting new to
+the ancestor there should be no interaction from us, so it's done automaticaly.
+And the same for the case where someone live what's on the orginal one but the
+other remove it and maybe add something to it. Which mean a that liine caused
+a big and needed to be fixed, so that's also obvious. But what's not obviouus
+and it's better do it manually if both guys changed the same line (or in the per
+imeter) from the orginal one, now it's a problem. Git better comes and put forward
+the problem to us.  And after some talk probably me and the other guy come
+to a solution as to whcih lines of code to keep, or even comeup with a new solution
+altogether.
