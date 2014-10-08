@@ -61,7 +61,7 @@ How can you use the commands git log and git diff to view the history of files?
 
     use git log to bring the whole commits already done sort of eyebird view on
     your repository changes. Than select two of those commits by taking note of
-    their ids and use diff to get zoomin and get the details on what lines have
+    their ids and use diff to zoom in and get the details of what lines have
     been added or removed.
 How might using version control make you more confident to make changes that
 could break something?
@@ -80,4 +80,4 @@ Now that you have your workspace set up, what do you want to try using Git for?
     plain or markup text. And for coding whenver I would write a program that's
     big and have a lot of lines of code. So that I can always see how my changes
     are and be able to reflect. You think I would forget that. I think that's the
-    big take-away from those lessons. 
+    big take-away from those lessons.
